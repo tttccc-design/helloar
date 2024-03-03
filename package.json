@@ -7,7 +7,8 @@
     "build": "tsc -p tsconfig.json",
     "lint": "eslint --ext .ts,.tsx --ignore-pattern node_modules .",
     "lint:fix": "eslint --ext .ts,.tsx --ignore-pattern node_modules --fix .",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "custom-build": "[my-framework] build --output public"
   },
   "author": "",
   "license": "",
@@ -19,11 +20,6 @@
     "eslint": "^8.54.0",
     "typescript": "^5.3.2"
   },
-  {
-  "scripts": {
-    "build": "[my-framework] build --output public"
-  }
-}
   "eslintConfig": {
     "extends": [
       "eslint:recommended",
